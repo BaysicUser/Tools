@@ -49,6 +49,7 @@ git clone https://github.com/rasta-mouse/Sherlock.git
 git clone https://github.com/PowerShellMafia/PowerSploit.git
 git clone https://github.com/411Hall/JAWS.git
 git clone https://github.com/Tib3rius/windowsprivchecker.git
+git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEAS.bat
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx64.exe
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx86.exe
