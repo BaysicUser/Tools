@@ -107,4 +107,4 @@ wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe
 Echo Downloading Pimpmykali
 cd /opt/Tools/
 git clone https://github.com/Dewalt-arch/pimpmykali.git
-/opt/scripts/pimpmykali/pimpmykali.sh
+sudo /opt/Tools/pimpmykali/pimpmykali.sh
