@@ -25,9 +25,7 @@ python3 -m pipx install impacket
 
 #Download Scan Tools
 echo Download Scanning Tools
-mkdir /opt/Tools/Scan/ && cd /opt/Tools/Scan/
-pipx install git+https://github.com/Tib3rius/AutoRecon.git
-git clone https://github.com/xaitax/SploitScan.git
+sudo apt install autorecon
 
 #Download Linux Enum Scripts
 echo Downloading Linux Enum Scripts
@@ -80,10 +78,14 @@ echo Downloading Visual Studio
 
 
 #Download Tunnel Tools
-echo Downloading Tunneling Tools
-mkdir /opt/Tools/Tunneling/ && cd /opt/Tools/Tunneling/
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_linux_amd64.tar.gz
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_windows_amd64.zip
+echo "####Installing Tunneling Tools####"
+/n
+/n
+sudo apt install ligolo-ng
+
+#mkdir /opt/Tools/Tunneling/ && cd /opt/Tools/Tunneling/
+#wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_linux_amd64.tar.gz
+#wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_windows_amd64.zip
 
 #Download Additional Resources and Tools
 echo Downloading Other Tools 
@@ -96,6 +98,13 @@ git clone https://github.com/DanMcInerney/net-creds.git
 wget -c https://github.com/RustScan/RustScan/archive/refs/tags/2.1.1.tar.gz -O Rustscan.tar.gz
 wget https://code.visualstudio.com/docs/?dv=linux64_deb
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
+sudo apt install gowitness
+sudo apt install netexec
+
+#Exploit Tools
+sudo apt install getsploit
+sudo apt install sploitscan
+
 
 mkdir /opt/Tools/NetExec/
 cd /opt/Tools/NetExec/
