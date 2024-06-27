@@ -101,6 +101,7 @@ wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 sudo apt install gowitness
 sudo apt install netexec
 pip3 install defaultcreds-cheat-sheet
+git clone https://github.com/urbanadventurer/username-anarchy.git
 
 #Exploit Tools
 sudo apt install getsploit
