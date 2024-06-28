@@ -103,16 +103,18 @@ sudo apt install netexec
 git clone https://github.com/urbanadventurer/username-anarchy.git
 
 #Credential Tools
+mkdir /opt/Tools/Enumerations/Creds/ && cd /opt/Tools/Enumerations/Creds/
 pip3 install defaultcreds-cheat-sheet
 pip3 install pypykatz
+git clone https://github.com/AlessandroZ/LaZagne
+git clone https://github.com/huntergregal/mimipenguin
 
 #Exploit Tools
 sudo apt install getsploit
 sudo apt install sploitscan
 
 
-mkdir /opt/Tools/NetExec/
-cd /opt/Tools/NetExec/
+mkdir /opt/Tools/NetExec/ && cd /opt/Tools/NetExec/
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe
 
