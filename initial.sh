@@ -27,7 +27,7 @@ python3 -m pipx install impacket
 echo Download Scanning Tools
 sudo apt install autorecon
 
-#Download Linux Enum Scripts
+#Enumeration Linux Scripts
 echo Downloading Linux Enum Scripts
 mkdir /opt/Tools/Enumeration/Linux/ && cd /opt/Tools/Enumeration/Linux/
 git clone https://github.com/rebootuser/LinEnum.git
@@ -38,7 +38,7 @@ wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/linpeas.sh
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/linpeas_linux_amd64
 
-#Download Windows Enum Scripts
+#Enumeration: Windows Scripts
 echo Downloading Windows Enum Scripts
 mkdir /opt/Tools/Enumeration/Windows/ && cd /opt/Tools/Enumeration/Windows/
 git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
@@ -51,6 +51,14 @@ git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEAS.bat
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx64.exe
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx86.exe
+
+#Enumeration: Credential Tools
+mkdir /opt/Tools/Enumerations/Creds/ && cd /opt/Tools/Enumerations/Creds/
+pip3 install defaultcreds-cheat-sheet
+pip3 install pypykatz
+git clone https://github.com/AlessandroZ/LaZagne
+git clone https://github.com/huntergregal/mimipenguin
+git clone https://github.com/unode/firefox_decrypt
 
 #Download AD Tools
 echo Downloading AD Tools
@@ -101,13 +109,6 @@ wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 sudo apt install gowitness
 sudo apt install netexec
 git clone https://github.com/urbanadventurer/username-anarchy.git
-
-#Credential Tools
-mkdir /opt/Tools/Enumerations/Creds/ && cd /opt/Tools/Enumerations/Creds/
-pip3 install defaultcreds-cheat-sheet
-pip3 install pypykatz
-git clone https://github.com/AlessandroZ/LaZagne
-git clone https://github.com/huntergregal/mimipenguin
 
 #Exploit Tools
 sudo apt install getsploit
