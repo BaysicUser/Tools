@@ -27,6 +27,9 @@ python3 -m pipx install impacket
 echo Download Scanning Tools
 sudo apt install autorecon
 
+#Enumeration Web Apps
+git clone https://github.com/yogeshojha/rengine
+
 #Enumeration Linux Scripts
 echo Downloading Linux Enum Scripts
 mkdir /opt/Tools/Enumeration/Linux/ && cd /opt/Tools/Enumeration/Linux/
