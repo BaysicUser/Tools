@@ -82,6 +82,8 @@ echo Downloading C2s
 mkdir /opt/Tools/C2/ && cd /opt/Tools/C2/
 git clone https://github.com/HavocFramework/Havoc.git
 
+#Obfuscation
+git clone https://github.com/mgeeky/ProtectMyTooling
 
 #Download Visual Studio
 cd /opt/Tools/
