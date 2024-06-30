@@ -81,8 +81,30 @@ git clone https://github.com/FSecureLABS/SharpGPOAbuse.git
 echo Downloading C2s
 mkdir /opt/Tools/C2/ && cd /opt/Tools/C2/
 git clone https://github.com/HavocFramework/Havoc.git
+git clone https://github.com/its-a-feature/Mythic.git
+cd Mythic
+sudo ./install_docker_kali.sh
+apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
 
-#Obfuscation
+#Docker Config
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" | \ sudo tee /etc/apt/sources.list.d/docker.list 
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
+apt-get install -y --no-install-recommends docker-ce docker-compose-plugin
+
+cd /opt/Tools/C2/Mythic/
+sudo apt-get install make
+sudo make
+sudo ./mythic-cli install github https://github.com/MythicAgents/Apollo
+sudo ./mythic-cli install github https://github.com/MythicAgents/Athena
+sudo ./mythic-cli install github https://github.com/MythicC2Profiles/http
+
+
+#Obfuscation Tools
 git clone https://github.com/mgeeky/ProtectMyTooling
 
 #Download Visual Studio
