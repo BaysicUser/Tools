@@ -62,6 +62,7 @@ pip3 install pypykatz
 git clone https://github.com/AlessandroZ/LaZagne
 git clone https://github.com/huntergregal/mimipenguin
 git clone https://github.com/unode/firefox_decrypt
+git clone https://github.com/urbanadventurer/username-anarchy.git
 
 #Download AD Tools
 echo Downloading AD Tools
@@ -76,6 +77,9 @@ git clone https://github.com/adrecon/ADRecon
 git clone https://github.com/ropnop/windapsearch
 git clone https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors
 git clone https://github.com/FSecureLABS/SharpGPOAbuse.git
+
+#Lateral Movement
+git clone https://github.com/Kevin-Robertson/Invoke-TheHash.git
 
 #Download C2s
 echo Downloading C2s
@@ -128,14 +132,13 @@ cd /opt/Tools/
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
 git clone https://github.com/t3l3machus/psudohash.git
 git clone https://github.com/t3l3machus/PowerShell-Obfuscation-Bible.git
-git clone https://github.com/iagox86/dnscat2.git
 git clone https://github.com/DanMcInerney/net-creds.git
 wget -c https://github.com/RustScan/RustScan/archive/refs/tags/2.1.1.tar.gz -O Rustscan.tar.gz
 wget https://code.visualstudio.com/docs/?dv=linux64_deb
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 sudo apt install gowitness
 sudo apt install netexec
-git clone https://github.com/urbanadventurer/username-anarchy.git
+
 
 #Exploit Tools
 sudo apt install getsploit
@@ -146,6 +149,9 @@ mkdir /opt/Tools/NetExec/ && cd /opt/Tools/NetExec/
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe
 
+#Exfiltration
+mkdir /opt/Tools/Exfil/ && cd /opt/Tools/Exfil/
+git clone https://github.com/iagox86/dnscat2.git
 
 #Download Pimpmykali
 Echo Downloading Pimpmykali
