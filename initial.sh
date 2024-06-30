@@ -105,7 +105,9 @@ sudo apt-get install make
 sudo make
 sudo ./mythic-cli install github https://github.com/MythicAgents/Apollo
 sudo ./mythic-cli install github https://github.com/MythicAgents/Athena
+sudo ./mythic-cli install github https://github.com/MythicAgents/bloodhound
 sudo ./mythic-cli install github https://github.com/MythicC2Profiles/http
+sudo ./mythic-cli install github https://github.com/MythicC2Profiles/dns
 
 
 #Obfuscation Tools
