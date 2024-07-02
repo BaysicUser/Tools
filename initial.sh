@@ -23,6 +23,9 @@ python3 -m pipx ensurepath
 echo Installing impacket
 python3 -m pipx install impacket
 
+#Install Libreoffice
+sudo apt-get install libreoffice
+
 #Download Scan Tools
 echo Download Scanning Tools
 sudo apt install autorecon
