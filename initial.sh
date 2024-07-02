@@ -77,6 +77,7 @@ git clone https://github.com/adrecon/ADRecon
 git clone https://github.com/ropnop/windapsearch
 git clone https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors
 git clone https://github.com/FSecureLABS/SharpGPOAbuse.git
+git clone https://github.com/sosdave/KeyTabExtract
 
 #Lateral Movement
 git clone https://github.com/Kevin-Robertson/Invoke-TheHash.git
