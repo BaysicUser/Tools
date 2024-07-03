@@ -70,7 +70,7 @@ sudo apt install cupp
 
 #Download AD Tools
 echo Downloading AD Tools
-mkdir /opt/Tools/AD/ && cd /opt/Tools/AD/
+mkdir -p /opt/Tools/AD/ && cd /opt/Tools/AD/
 git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/dafthack/DomainPasswordSpray.git
 git clone https://github.com/ropnop/kerbrute
@@ -89,7 +89,7 @@ git clone https://github.com/Kevin-Robertson/Invoke-TheHash.git
 
 #Download C2s
 echo Downloading C2s
-mkdir /opt/Tools/C2/ && cd /opt/Tools/C2/
+mkdir -p /opt/Tools/C2/ && cd /opt/Tools/C2/
 git clone https://github.com/HavocFramework/Havoc.git
 git clone https://github.com/its-a-feature/Mythic.git
 cd Mythic
