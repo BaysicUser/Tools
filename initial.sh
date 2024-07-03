@@ -68,6 +68,8 @@ git clone https://github.com/AlessandroZ/LaZagne
 git clone https://github.com/huntergregal/mimipenguin
 git clone https://github.com/unode/firefox_decrypt
 git clone https://github.com/urbanadventurer/username-anarchy.git
+git clone https://github.com/digininja/RSMangler.git
+git clone https://github.com/sc0tfree/mentalist.git
 sudo apt install cupp
 
 #Download AD Tools
