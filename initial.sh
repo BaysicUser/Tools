@@ -35,7 +35,7 @@ git clone https://github.com/yogeshojha/rengine
 
 #Enumeration Linux Scripts
 echo Downloading Linux Enum Scripts
-mkdir /opt/Tools/Enumeration/Linux/ && cd /opt/Tools/Enumeration/Linux/
+mkdir -p /opt/Tools/Enumeration/Linux/ && cd /opt/Tools/Enumeration/Linux/
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/jondonas/linux-exploit-suggester-2.git
 git clone https://github.com/CiscoCXSecurity/enum4linux
@@ -46,7 +46,7 @@ wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/li
 
 #Enumeration: Windows Scripts
 echo Downloading Windows Enum Scripts
-mkdir /opt/Tools/Enumeration/Windows/ && cd /opt/Tools/Enumeration/Windows/
+mkdir -p /opt/Tools/Enumeration/Windows/ && cd /opt/Tools/Enumeration/Windows/
 git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 git clone https://github.com/GhostPack/Seatbelt.git
 git clone https://github.com/rasta-mouse/Sherlock.git
@@ -59,13 +59,14 @@ wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/wi
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx86.exe
 
 #Enumeration: Credential Tools
-mkdir /opt/Tools/Enumerations/Creds/ && cd /opt/Tools/Enumerations/Creds/
+mkdir -p /opt/Tools/Enumerations/Creds/ && cd /opt/Tools/Enumerations/Creds/
 pip3 install defaultcreds-cheat-sheet
 pip3 install pypykatz
 git clone https://github.com/AlessandroZ/LaZagne
 git clone https://github.com/huntergregal/mimipenguin
 git clone https://github.com/unode/firefox_decrypt
 git clone https://github.com/urbanadventurer/username-anarchy.git
+sudo apt install cupp
 
 #Download AD Tools
 echo Downloading AD Tools
