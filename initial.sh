@@ -61,7 +61,7 @@ wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/wi
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx86.exe
 
 #Enumeration: Credential Tools
-mkdir -p /opt/Tools/Enumerations/Creds/ && cd /opt/Tools/Enumerations/Creds/
+mkdir -p /opt/Tools/Enumeration/Creds/ && cd /opt/Tools/Enumerations/Creds/
 pip3 install defaultcreds-cheat-sheet
 pip3 install pypykatz
 git clone https://github.com/AlessandroZ/LaZagne
