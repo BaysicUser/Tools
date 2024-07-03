@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update && sudo apt full-upgrade -y
+
 #Delete default SSH keys
 cd /etc/ssh/
 rm -f ssh_host_*
