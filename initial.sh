@@ -28,6 +28,12 @@ python3 -m pipx install impacket
 #Install Libreoffice
 sudo apt-get install libreoffice
 
+#Recon Tools
+git clone https://github.com/thewhiteh4t/FinalRecon.git
+cd FinalRecon
+pip3 install -r requirements.txt
+chmod +x ./finalrecon.py
+
 #Download Scan Tools
 echo Download Scanning Tools
 sudo apt install autorecon
