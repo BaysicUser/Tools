@@ -29,6 +29,7 @@ python3 -m pipx install impacket
 sudo apt-get install libreoffice
 
 #Recon Tools
+mkdir -p /opt/Tools/Recon/ && cd /opt/Tools/Recon/
 pip3 install scrapy
 wget -O ReconSpider.zip https://academy.hackthebox.com/storage/modules/144/ReconSpider.v1.2.zip
 unzip ReconSpider.zip
