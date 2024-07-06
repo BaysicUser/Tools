@@ -121,6 +121,7 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.d
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
 apt-get install -y --no-install-recommends docker-ce docker-compose-plugin
 
+<<com
 cd /opt/Tools/C2/Mythic/
 sudo apt-get install make
 sudo make
@@ -129,7 +130,7 @@ sudo ./mythic-cli install github https://github.com/MythicAgents/Athena
 sudo ./mythic-cli install github https://github.com/MythicAgents/bloodhound
 sudo ./mythic-cli install github https://github.com/MythicC2Profiles/http
 sudo ./mythic-cli install github https://github.com/MythicC2Profiles/dns
-
+com
 
 #Obfuscation Tools
 git clone https://github.com/mgeeky/ProtectMyTooling
