@@ -162,6 +162,7 @@ wget https://code.visualstudio.com/docs/?dv=linux64_deb
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 sudo apt install gowitness
 sudo apt install netexec
+sudo apt install hexedit
 
 
 #Exploit Tools
