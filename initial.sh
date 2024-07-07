@@ -22,14 +22,14 @@ sudo apt install python3-venv
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 
-echo Installing impacket
-python3 -m pipx install impacket
+# Libreoffice
+#sudo apt-get install libreoffice
 
-#Install Libreoffice
-sudo apt-get install libreoffice
-
-#Recon Tools
+# Recon Tools
 mkdir -p /opt/Tools/Recon/ && cd /opt/Tools/Recon/
+sudo apt install autorecon
+sudo apt install getsploit
+sudo apt install sploitscan
 pip3 install scrapy
 wget -O ReconSpider.zip https://academy.hackthebox.com/storage/modules/144/ReconSpider.v1.2.zip
 unzip ReconSpider.zip
@@ -39,9 +39,8 @@ cd FinalRecon
 pip3 install -r requirements.txt
 chmod +x ./finalrecon.py
 
-#Download Scan Tools
-echo Download Scanning Tools
-sudo apt install autorecon
+git clone https://github.com/FortyNorthSecurity/EyeWitness
+git clone https://github.com/michenriksen/aquatone
 
 #Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
@@ -140,7 +139,7 @@ cd /opt/Tools/
 echo Downloading Visual Studio
 
 
-#Download Tunnel Tools
+# Tunnel Tools
 echo "####Installing Tunneling Tools####"
 /n
 /n
@@ -150,9 +149,10 @@ sudo apt install ligolo-ng
 #wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_linux_amd64.tar.gz
 #wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_windows_amd64.zip
 
-#Download Additional Resources and Tools
+# Additional Resources and Tools
 echo Downloading Other Tools 
 cd /opt/Tools/
+python3 -m pipx install impacket
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
 git clone https://github.com/t3l3machus/psudohash.git
 git clone https://github.com/t3l3machus/PowerShell-Obfuscation-Bible.git
@@ -164,12 +164,7 @@ sudo apt install gowitness
 sudo apt install netexec
 sudo apt install hexedit
 
-
-#Exploit Tools
-sudo apt install getsploit
-sudo apt install sploitscan
-
-
+# Exploit Tools
 mkdir /opt/Tools/NetExec/ && cd /opt/Tools/NetExec/
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe
