@@ -136,7 +136,14 @@ git clone https://github.com/mgeeky/ProtectMyTooling
 
 #Download Visual Studio
 cd /opt/Tools/
-echo Downloading Visual Studio
+/n
+/n
+echo Installing Downloading Visual Studio
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+sudo apt update && sudo apt install code
+
 
 
 # Tunnel Tools
