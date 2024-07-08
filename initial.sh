@@ -45,6 +45,7 @@ sudo apt install eyewitness -y
 mkdir Aquatone && cd Aquatone/
 wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
 unzip aquatone_linux_amd64_1.7.0.zip
+cp aquatone /usr/bin/
 
 cd /opt/Tools/Recon/
 #Enumeration Web Apps
