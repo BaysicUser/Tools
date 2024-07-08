@@ -41,8 +41,12 @@ chmod +x ./finalrecon.py
 
 #git clone https://github.com/FortyNorthSecurity/EyeWitness
 sudo apt install eyewitness -y
-git clone https://github.com/michenriksen/aquatone
+#git clone https://github.com/michenriksen/aquatone
+mkdir Aquatone && cd Aquatone/
+wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
+unzip aquatone_linux_amd64_1.7.0.zip
 
+cd /opt/Tools/Recon/
 #Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
 
