@@ -39,7 +39,8 @@ cd FinalRecon
 pip3 install -r requirements.txt
 chmod +x ./finalrecon.py
 
-git clone https://github.com/FortyNorthSecurity/EyeWitness
+#git clone https://github.com/FortyNorthSecurity/EyeWitness
+sudo apt install eyewitness -y
 git clone https://github.com/michenriksen/aquatone
 
 #Enumeration Web Apps
