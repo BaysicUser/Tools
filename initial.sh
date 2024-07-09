@@ -192,3 +192,8 @@ Echo Downloading Pimpmykali
 cd /opt/Tools/
 git clone https://github.com/Dewalt-arch/pimpmykali.git
 sudo /opt/Tools/pimpmykali/pimpmykali.sh
+
+<<com
+https://github.com/gtworek/Priv2Admin
+
+com
