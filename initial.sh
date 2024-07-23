@@ -197,4 +197,11 @@ sudo /opt/Tools/pimpmykali/pimpmykali.sh
 <<com
 https://github.com/gtworek/Priv2Admin
 https://www.thehacker.recipes/
+https://www.ired.team/
+
+
+
+
+
+
 com
