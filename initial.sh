@@ -16,6 +16,8 @@ mkdir /opt/Scripts/
 sudo apt install python3
 sudo apt install python3-pip
 sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf
+sudo apt install jd-gui
+
 
 #Install pipx
 sudo apt install python3-venv
@@ -27,6 +29,11 @@ python3 -m pipx ensurepath
 
 # Recon Tools
 mkdir -p /opt/Tools/Recon/ && cd /opt/Tools/Recon/
+git clone https://github.com/codingo/Reconnoitre.git
+cd /opt/Tools/Recon/Reconnoitre
+python3 setup.py install
+
+cd /opt/Tools/Recon/
 sudo apt install autorecon
 sudo apt install getsploit
 sudo apt install sploitscan
