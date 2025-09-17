@@ -15,8 +15,8 @@ mkdir /opt/Scripts/
 #Install Common Tools
 sudo apt install python3
 sudo apt install python3-pip
-sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf
-sudo apt install jd-gui
+sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
+sudo apt install jd-gui -y
 
 
 #Install pipx
@@ -34,8 +34,8 @@ cd /opt/Tools/Recon/Reconnoitre
 python3 setup.py install
 
 cd /opt/Tools/Recon/
-sudo apt install autorecon
-sudo apt install getsploit
+sudo apt install autorecon -y
+sudo apt install getsploit -y
 sudo apt install sploitscan
 pip3 install scrapy
 wget -O ReconSpider.zip https://academy.hackthebox.com/storage/modules/144/ReconSpider.v1.2.zip
