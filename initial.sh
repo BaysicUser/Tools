@@ -3,13 +3,14 @@
 sudo apt update && sudo apt full-upgrade -y
 
 #Delete default SSH keys
-cd /etc/ssh/
-rm -f ssh_host_*
+rm -f /etc/ssh/ssh_host_*
 dpkg-reconfigure openssh-server
 
 #Move RC file
 mv ~./zshrc ~./zshrc.bak
 mv /opt/Tools/zshrc.bak ~./zshrc
+
+chmod +x /opt/Tools/scan.sh && mv /opt/Tools/scan.sh /usr/bin/
 
 #Install Fonts
 mkdir Fonts
