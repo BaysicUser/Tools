@@ -7,6 +7,10 @@ cd /etc/ssh/
 rm -f ssh_host_*
 dpkg-reconfigure openssh-server
 
+#Move RC file
+mv ~./zshrc ~./zshrc.bak
+mv /opt/Tools/zshrc.bak ~./zshrc
+
 #Install Fonts
 mkdir Fonts
 unzip Fonts.zip -d Fonts
