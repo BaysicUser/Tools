@@ -7,10 +7,11 @@ cd /etc/ssh/
 rm -f ssh_host_*
 dpkg-reconfigure openssh-server
 
-
-#Make Directories
-mkdir /opt/Tools/
-mkdir /opt/Scripts/
+#Install Fonts
+mkdir Fonts
+unzip Fonts.zip -d Fonts
+cp /Fonts/*.ttf /usr/share/fonts/truetype/
+cp /Fonts/*.ttf /usr/share/fonts/opentype/
 
 #Install Common Tools
 sudo apt install python3
@@ -36,7 +37,7 @@ python3 setup.py install
 cd /opt/Tools/Recon/
 sudo apt install autorecon -y
 sudo apt install getsploit -y
-sudo apt install sploitscan
+sudo apt install sploitscan -y
 pip3 install scrapy
 wget -O ReconSpider.zip https://academy.hackthebox.com/storage/modules/144/ReconSpider.v1.2.zip
 unzip ReconSpider.zip
@@ -159,8 +160,6 @@ sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
 echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update && sudo apt install code
 
-
-
 # Tunnel Tools
 echo "####Installing Tunneling Tools####"
 /n
@@ -172,7 +171,7 @@ sudo apt install ligolo-ng
 #wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_windows_amd64.zip
 
 # Additional Resources and Tools
-echo Downloading Other Tools 
+echo "####Downloading Other Tools####"
 cd /opt/Tools/
 python3 -m pipx install impacket
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
@@ -202,13 +201,9 @@ git clone https://github.com/Dewalt-arch/pimpmykali.git
 sudo /opt/Tools/pimpmykali/pimpmykali.sh
 
 <<com
+
 https://github.com/gtworek/Priv2Admin
 https://www.thehacker.recipes/
 https://www.ired.team/
-
-
-
-
-
 
 com
