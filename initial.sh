@@ -13,12 +13,15 @@ mv /opt/Tools/zshrc.bak ~./zshrc
 chmod +x /opt/Tools/scan.sh && mv /opt/Tools/scan.sh /usr/bin/
 
 #Install Fonts
+echo "#### Installing Fonts ####"
+
 mkdir Fonts
 unzip Fonts.zip -d Fonts
 cp /Fonts/*.ttf /usr/share/fonts/truetype/
 cp /Fonts/*.ttf /usr/share/fonts/opentype/
 
 #Install Common Tools
+echo "#### Installing Common Tools ####"
 sudo apt install python3
 sudo apt install python3-pip
 sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
@@ -34,12 +37,13 @@ python3 -m pipx ensurepath
 #sudo apt-get install libreoffice
 
 # Recon Tools
+echo "#### Downloading Recon Tools ####"
+
 mkdir -p /opt/Tools/Recon/ && cd /opt/Tools/Recon/
 git clone https://github.com/codingo/Reconnoitre.git
 cd /opt/Tools/Recon/Reconnoitre
 python3 setup.py install
 
-cd /opt/Tools/Recon/
 sudo apt install autorecon -y
 sudo apt install getsploit -y
 sudo apt install sploitscan -y
@@ -60,12 +64,12 @@ wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_
 unzip aquatone_linux_amd64_1.7.0.zip
 cp aquatone /usr/bin/
 
-cd /opt/Tools/Recon/
 #Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
 
 #Enumeration Linux Scripts
-echo Downloading Linux Enum Scripts
+echo "#### Downloading Linux Enum Scripts ####"
+
 mkdir -p /opt/Tools/Enumeration/Linux/ && cd /opt/Tools/Enumeration/Linux/
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/jondonas/linux-exploit-suggester-2.git
@@ -76,7 +80,9 @@ wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/li
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/linpeas_linux_amd64
 
 #Enumeration: Windows Scripts
-echo Downloading Windows Enum Scripts
+echo "#### Downloading Windows Enum Scripts ####"
+
+
 mkdir -p /opt/Tools/Enumeration/Windows/ && cd /opt/Tools/Enumeration/Windows/
 git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 git clone https://github.com/GhostPack/Seatbelt.git
@@ -102,7 +108,8 @@ git clone https://github.com/sc0tfree/mentalist.git
 sudo apt install cupp
 
 #Download AD Tools
-echo Downloading AD Tools
+echo "#### Downloading AD Tools ####"
+
 mkdir -p /opt/Tools/AD/ && cd /opt/Tools/AD/
 git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/dafthack/DomainPasswordSpray.git
@@ -123,7 +130,8 @@ git clone https://github.com/yaap7/ldapsearch-ad.git
 git clone https://github.com/Kevin-Robertson/Invoke-TheHash.git
 
 #Download C2s
-echo Downloading C2s
+echo "#### Downloading C2s ####"
+
 mkdir -p /opt/Tools/C2/ && cd /opt/Tools/C2/
 git clone https://github.com/HavocFramework/Havoc.git
 git clone https://github.com/its-a-feature/Mythic.git
