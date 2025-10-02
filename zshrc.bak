@@ -230,7 +230,7 @@ fi
 #alias l='ls -CF'
 alias HTB='sudo openvpn /root/Documents/lab_BaysicUser.ovpn'
 alias HTBEU='sudo openvpn /root/Documents/lab_BaysicUser_EU.ovpn'
-alias scan='/opt/scripts/scan.sh'
+alias scan='/usr/bin/scan'
 alias server='sudo python -m SimpleHTTPServer 80'
 
 # enable auto-suggestions based on the history
