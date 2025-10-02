@@ -10,7 +10,7 @@ dpkg-reconfigure openssh-server
 mv ~./zshrc ~./zshrc.bak
 mv /opt/Tools/zshrc.bak ~./zshrc
 
-chmod +x /opt/Tools/scan.sh && mv /opt/Tools/scan.sh /usr/bin/
+chmod +x /opt/Tools/scan.sh && mv /opt/Tools/scan.sh /usr/bin/scan
 
 #Install Fonts
 echo "#### Installing Fonts ####"
