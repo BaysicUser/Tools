@@ -2,6 +2,11 @@
 
 sudo apt update && sudo apt full-upgrade -y
 
+# For MAC VMs Only
+#  sudo apt install dkms
+#  sudo apt install libelf-dev
+#  sudo mount -o exec /dev/sr0 /media/cdrom
+
 #Delete default SSH keys
 rm -f /etc/ssh/ssh_host_*
 dpkg-reconfigure openssh-server
