@@ -12,8 +12,8 @@ rm -f /etc/ssh/ssh_host_*
 dpkg-reconfigure openssh-server
 
 #Move RC file
-mv ~./zshrc ~./zshrc.bak
-mv /opt/Tools/zshrc.bak ~./zshrc
+mv ~/.zshrc ~/.zshrc.bak
+mv /opt/Tools/zshrc.bak ~/.zshrc
 
 chmod +x /opt/Tools/scan.sh && mv /opt/Tools/scan.sh /usr/bin/scan
 
@@ -22,8 +22,8 @@ echo "#### Installing Fonts ####"
 
 mkdir Fonts
 unzip Fonts.zip -d Fonts
-cp /Fonts/*.ttf /usr/share/fonts/truetype/
-cp /Fonts/*.ttf /usr/share/fonts/opentype/
+cp ./Fonts/*.ttf /usr/share/fonts/truetype/
+cp ./Fonts/*.ttf /usr/share/fonts/opentype/
 
 #Install Common Tools
 echo "#### Installing Common Tools ####"
