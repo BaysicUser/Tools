@@ -69,6 +69,9 @@ wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_
 unzip aquatone_linux_amd64_1.7.0.zip
 cp aquatone /usr/bin/
 
+git clone https://github.com/21y4d/nmapAutomator.git
+#sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
+
 #Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
 
