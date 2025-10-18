@@ -224,6 +224,10 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 fi
 
+# Quality of life improvements
+export myip=$(ip addr show tun0 2> /dev/null | grep 'inet ' | awk '{print $2}' | cut -d'/' -f1)
+
+
 # Aliases
 #alias ll='ls -la'
 #alias la='ls -A'
