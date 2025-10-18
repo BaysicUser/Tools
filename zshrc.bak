@@ -229,6 +229,7 @@ export myip=$(ip addr show tun0 2> /dev/null | grep 'inet ' | awk '{print $2}' |
 
 
 # Aliases
+alias copy='xclip -selection clipboard'
 #alias ll='ls -la'
 #alias la='ls -A'
 #alias l='ls -CF'
