@@ -7,15 +7,15 @@ sudo apt update && sudo apt full-upgrade -y
 #  sudo apt install libelf-dev
 #  sudo mount -o exec /dev/sr0 /media/cdrom
 
-#Delete default SSH keys
+# Delete default SSH keys
 rm -f /etc/ssh/ssh_host_*
 dpkg-reconfigure openssh-server
 
-#Move RC file
+# Move RC file
 mv ~/.zshrc ~/.zshrc.bak
-mv /opt/Tools/zshrc.bak ~/.zshrc
+mv ./zshrc.bak ~/.zshrc
 
-chmod +x /opt/Tools/scan.sh && mv /opt/Tools/scan.sh /usr/bin/scan
+chmod +x ./scan.sh && mv ./scan.sh /usr/bin/scan
 
 #Install Fonts
 echo "#### Installing Fonts ####"
@@ -152,6 +152,8 @@ git clone https://github.com/Kevin-Robertson/Invoke-TheHash.git
 
 # Download C2s
 echo "#### Downloading C2s ####"
+
+apt-get install villain -y
 
 mkdir -p /opt/Tools/C2/ && cd /opt/Tools/C2/
 git clone https://github.com/HavocFramework/Havoc.git
