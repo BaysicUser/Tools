@@ -41,11 +41,19 @@ python3 -m pipx ensurepath
 # Libreoffice
 #sudo apt-get install libreoffice
 
-# Install Sublime Text
+# Install Sublime and Visual Studio
+
+mkdir -p /opt/Tools/Other/ && cd /opt/Tools/Other/
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo tee /etc/apt/keyrings/sublimehq-pub.asc > /dev/null
 echo -e 'Types: deb\nURIs: https://download.sublimetext.com/\nSuites: apt/stable/\nSigned-By: /etc/apt/keyrings/sublimehq-pub.asc' | sudo tee /etc/apt/sources.list.d/sublime-text.sources
 sudo apt-get update
 sudo apt-get install sublime-text
+
+#Download Visual Studio
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+sudo apt update && sudo apt install code
 
 # Recon Tools
 echo "#### Downloading Recon Tools ####"
@@ -81,10 +89,10 @@ git clone https://github.com/21y4d/nmapAutomator.git
 #Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
 
-#Enumeration Linux Scripts
+# PrivEsc Linux Scripts
 echo "#### Downloading Linux Enum Scripts ####"
 
-mkdir -p /opt/Tools/Enumeration/Linux/ && cd /opt/Tools/Enumeration/Linux/
+mkdir -p /opt/Tools/PrivEsc/Linux/ && cd /opt/Tools/PrivEsc/Linux/
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/jondonas/linux-exploit-suggester-2.git
 git clone https://github.com/CiscoCXSecurity/enum4linux
@@ -93,11 +101,10 @@ wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/linpeas.sh
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/linpeas_linux_amd64
 
-#Enumeration: Windows Scripts
+# PrivEsc Windows Scripts
 echo "#### Downloading Windows Enum Scripts ####"
 
-
-mkdir -p /opt/Tools/Enumeration/Windows/ && cd /opt/Tools/Enumeration/Windows/
+mkdir -p /opt/Tools/PrivEsc/Windows/ && cd /opt/Tools/PrivEsc/Windows/
 git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 git clone https://github.com/GhostPack/Seatbelt.git
 git clone https://github.com/rasta-mouse/Sherlock.git
@@ -109,8 +116,8 @@ wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/wi
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx64.exe
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx86.exe
 
-#Enumeration: Credential Tools
-mkdir -p /opt/Tools/Enumeration/Creds/ && cd /opt/Tools/Enumerations/Creds/
+# Enumeration Credential Tools
+mkdir -p /opt/Tools/Creds/ && cd /opt/Tools/Creds/
 pip3 install defaultcreds-cheat-sheet
 pip3 install pypykatz
 git clone https://github.com/AlessandroZ/LaZagne
@@ -121,7 +128,7 @@ git clone https://github.com/digininja/RSMangler.git
 git clone https://github.com/sc0tfree/mentalist.git
 sudo apt install cupp
 
-#Download AD Tools
+# Download AD Tools
 echo "#### Downloading AD Tools ####"
 
 mkdir -p /opt/Tools/AD/ && cd /opt/Tools/AD/
@@ -140,10 +147,10 @@ git clone https://github.com/CiscoCXSecurity/linikatz
 git clone https://github.com/CravateRouge/bloodyAD?tab=readme-ov-file
 git clone https://github.com/yaap7/ldapsearch-ad.git
 
-#Lateral Movement
+# Lateral Movement
 git clone https://github.com/Kevin-Robertson/Invoke-TheHash.git
 
-#Download C2s
+# Download C2s
 echo "#### Downloading C2s ####"
 
 mkdir -p /opt/Tools/C2/ && cd /opt/Tools/C2/
@@ -158,7 +165,7 @@ apt-get install -y \
     gnupg-agent \
     software-properties-common
 
-#Docker Config
+# Install Docker
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" | \ sudo tee /etc/apt/sources.list.d/docker.list 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
 apt-get install -y --no-install-recommends docker-ce docker-compose-plugin
@@ -174,25 +181,14 @@ sudo ./mythic-cli install github https://github.com/MythicC2Profiles/http
 sudo ./mythic-cli install github https://github.com/MythicC2Profiles/dns
 com
 
-#Obfuscation Tools
+# Obfuscation Tools
 git clone https://github.com/mgeeky/ProtectMyTooling
-
-#Download Visual Studio
-cd /opt/Tools/
-/n
-/n
-echo Installing Downloading Visual Studio
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
-sudo apt update && sudo apt install code
 
 # Tunnel Tools
 echo "####Installing Tunneling Tools####"
 /n
 /n
 sudo apt install ligolo-ng
-
 #mkdir /opt/Tools/Tunneling/ && cd /opt/Tools/Tunneling/
 #wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_linux_amd64.tar.gz
 #wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.5.2/ligolo-ng_agent_0.5.2_windows_amd64.zip
@@ -209,20 +205,19 @@ wget -c https://github.com/RustScan/RustScan/archive/refs/tags/2.1.1.tar.gz -O R
 wget https://code.visualstudio.com/docs/?dv=linux64_deb
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 sudo apt install gowitness
-sudo apt install netexec
 sudo apt install hexedit
 
+: '
 # Exploit Tools
 mkdir /opt/Tools/NetExec/ && cd /opt/Tools/NetExec/
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc
 wget https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe
-
-#Exfiltration
+ '
+# Exfiltration
 mkdir /opt/Tools/Exfil/ && cd /opt/Tools/Exfil/
 git clone https://github.com/iagox86/dnscat2.git
 
-#Download Pimpmykali
-Echo Downloading Pimpmykali
+# Download Pimpmykali
 cd /opt/Tools/
 git clone https://github.com/Dewalt-arch/pimpmykali.git
 sudo /opt/Tools/pimpmykali/pimpmykali.sh --newvm
