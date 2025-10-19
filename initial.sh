@@ -63,6 +63,9 @@ git clone https://github.com/codingo/Reconnoitre.git
 cd /opt/Tools/Recon/Reconnoitre
 python3 setup.py install
 
+git clone https://github.com/21y4d/nmapAutomator.git
+#sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
+
 sudo apt install autorecon -y
 sudo apt install getsploit -y
 sudo apt install sploitscan -y
@@ -82,9 +85,6 @@ mkdir Aquatone && cd Aquatone/
 wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
 unzip aquatone_linux_amd64_1.7.0.zip
 cp aquatone /usr/bin/
-
-git clone https://github.com/21y4d/nmapAutomator.git
-#sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
 
 #Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
@@ -204,7 +204,6 @@ git clone https://github.com/t3l3machus/psudohash.git
 git clone https://github.com/t3l3machus/PowerShell-Obfuscation-Bible.git
 git clone https://github.com/DanMcInerney/net-creds.git
 wget -c https://github.com/RustScan/RustScan/archive/refs/tags/2.1.1.tar.gz -O Rustscan.tar.gz
-wget https://code.visualstudio.com/docs/?dv=linux64_deb
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 sudo apt install gowitness
 sudo apt install hexedit
