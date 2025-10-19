@@ -225,7 +225,7 @@ git clone https://github.com/iagox86/dnscat2.git
 Echo Downloading Pimpmykali
 cd /opt/Tools/
 git clone https://github.com/Dewalt-arch/pimpmykali.git
-sudo /opt/Tools/pimpmykali/pimpmykali.sh
+sudo /opt/Tools/pimpmykali/pimpmykali.sh --newvm
 
 <<com
 
