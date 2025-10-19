@@ -227,6 +227,7 @@ fi
 # Quality of life improvements
 export myip=$(ip addr show tun0 2> /dev/null | grep 'inet ' | awk '{print $2}' | cut -d'/' -f1)
 
+: '
 # Terminal Logging
 if [ -z "${UNDER_SCRIPT}" ]; then
     logdir=${HOME}/logs
@@ -239,7 +240,7 @@ if [ -z "${UNDER_SCRIPT}" ]; then
 
     exit
 fi
-
+ '
 
 # Aliases
 alias copy='xclip -selection clipboard'
