@@ -32,6 +32,7 @@ sudo apt install python3-pip
 sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
 sudo apt install jd-gui -y
 sudo apt install xclip -y
+sudo apt install mingw-w64 --fix-missing -y 
 
 #Install pipx
 sudo apt install python3-venv
