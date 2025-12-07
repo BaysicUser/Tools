@@ -133,7 +133,9 @@ sudo apt install cupp
 echo "#### Downloading AD Tools ####"
 
 mkdir -p /opt/Tools/AD/ && cd /opt/Tools/AD/
-git clone https://github.com/BloodHoundAD/BloodHound.git
+sudo apt install -y bloodhound
+#git clone https://github.com/BloodHoundAD/BloodHound.git
+#git clone https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors
 git clone https://github.com/dafthack/DomainPasswordSpray.git
 git clone https://github.com/ropnop/kerbrute
 git clone https://github.com/Kevin-Robertson/Inveigh/blob/master/Inveigh.ps1
@@ -141,7 +143,7 @@ git clone https://github.com/GhostPack/Rubeus
 git clone https://github.com/leoloobeek/LAPSToolkit
 git clone https://github.com/adrecon/ADRecon
 git clone https://github.com/ropnop/windapsearch
-git clone https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors
+
 git clone https://github.com/FSecureLABS/SharpGPOAbuse.git
 git clone https://github.com/sosdave/KeyTabExtract
 git clone https://github.com/CiscoCXSecurity/linikatz
