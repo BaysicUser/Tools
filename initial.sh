@@ -116,6 +116,7 @@ git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEAS.bat
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx64.exe
 wget https://github.com/peass-ng/PEASS-ng/releases/download/20240421-825f642d/winPEASx86.exe
+wget https://github.com/tylerdotrar/SigmaPotato/releases/download/v1.2.6/SigmaPotato.exe
 
 # Enumeration Credential Tools
 mkdir -p /opt/Tools/Creds/ && cd /opt/Tools/Creds/
