@@ -17,7 +17,7 @@ mv ./zshrc.bak ~/.zshrc
 
 chmod +x ./scan.sh && mv ./scan.sh /usr/bin/scan
 
-#Install Fonts
+# Install Fonts
 echo "#### Installing Fonts ####"
 
 mkdir Fonts
@@ -25,7 +25,7 @@ unzip Fonts.zip -d Fonts
 cp ./Fonts/*.ttf /usr/share/fonts/truetype/
 cp ./Fonts/*.ttf /usr/share/fonts/opentype/
 
-#Install Common Tools
+# Install Common Tools
 echo "#### Installing Common Tools ####"
 sudo apt install python3
 sudo apt install python3-pip
@@ -34,7 +34,7 @@ sudo apt install jd-gui -y
 sudo apt install xclip -y
 sudo apt install mingw-w64 --fix-missing -y 
 
-#Install pipx
+# Install pipx
 sudo apt install python3-venv
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
@@ -42,7 +42,7 @@ python3 -m pipx ensurepath
 # Libreoffice
 #sudo apt-get install libreoffice
 
-# Install Sublime and Visual Studio
+# Install Sublime
 
 mkdir -p /opt/Tools/Other/ && cd /opt/Tools/Other/
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo tee /etc/apt/keyrings/sublimehq-pub.asc > /dev/null
@@ -50,7 +50,7 @@ echo -e 'Types: deb\nURIs: https://download.sublimetext.com/\nSuites: apt/stable
 sudo apt-get update
 sudo apt-get install sublime-text
 
-#Download Visual Studio
+# Install Visual Studio
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
 echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
@@ -87,7 +87,10 @@ wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_
 unzip aquatone_linux_amd64_1.7.0.zip
 cp aquatone /usr/bin/
 
-#Enumeration Web Apps
+apt-get install snmp-mibs-downloader
+download-mibs
+
+# Enumeration Web Apps
 git clone https://github.com/yogeshojha/rengine
 
 # PrivEsc Linux Scripts
