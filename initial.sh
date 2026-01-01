@@ -190,7 +190,9 @@ sudo ./mythic-cli install github https://github.com/MythicC2Profiles/http
 sudo ./mythic-cli install github https://github.com/MythicC2Profiles/dns
 com
 
-# Obfuscation Tools
+# Shell and Obfuscation Tools
+mkdir -p /opt/Tools/Shell/ && cd /opt/Tools/Shell/
+git clone https://github.com/Lukashku/shellgen.git
 git clone https://github.com/mgeeky/ProtectMyTooling
 
 # Tunnel Tools
