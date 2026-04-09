@@ -81,11 +81,14 @@ chmod +x ./finalrecon.py
 
 #git clone https://github.com/FortyNorthSecurity/EyeWitness
 sudo apt install eyewitness -y
+
+:'
 #git clone https://github.com/michenriksen/aquatone
 mkdir Aquatone && cd Aquatone/
 wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
 unzip aquatone_linux_amd64_1.7.0.zip
 cp aquatone /usr/bin/
+'
 
 apt-get install snmp-mibs-downloader
 download-mibs
